@@ -1,0 +1,98 @@
+/* src/Accordion.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .accordion {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  .accordion-header {
+    text-align: center;
+    font-size: 24px; /* Header font size */
+    color: #333333; /* Header text color */
+    margin-bottom: 10px;
+    /* font-weight: bold; */
+  }
+  
+  .accordion-subheader {
+    text-align: center;
+    font-size: 14px; /* Subheader font size */
+    color: #777777; /* Subheader text color */
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  
+  .accordion-item {
+    border-top: 1px solid #eeeeee;
+    padding: 25px 0;
+  }
+  
+  .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+    font-size: 18px; /* Title font size */
+    color: #333333; /* Title text color */
+    margin: 0;
+  }
+  
+  .accordion-title h3 {
+    margin: 0;
+    font-size: 18px; /* Title font size */
+    text-align: start;
+    width: 70%;
+    font-weight: 400;
+  }
+  .accordion-title h3:hover {
+    color: #838080;
+  }
+  .accordion-title.active h3 {
+    color: #838080; /* Active title text color */
+  }
+  
+  .accordion-content {
+    margin-top: 10px;
+    font-size: 13px; /* Content font size */
+    color: #555555; /* Content text color */
+    display: flex;
+    text-align: start;
+    line-height: 20.6px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  .accordion-content.open {
+    max-height: 500px; /* Adjust as needed */
+    padding: 10px 0;
+
+  }
+  button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Button font size */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
